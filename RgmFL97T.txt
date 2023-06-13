@@ -1,5 +1,7 @@
-
-Settings = {
+repeat task.wait(); local a = false
+    if game:IsLoaded() then
+        a = pcall(function()
+            Settings = {
     ["On Screen Trackers"] = false,
     ["Performance"] = {
         ["Disable 3D Rendering"] = false,
@@ -1609,3 +1611,4 @@ while 1 do
         break
     end
 end
+until a
